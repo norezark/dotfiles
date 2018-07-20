@@ -18,6 +18,8 @@ set wrapscan
 set wildmode=list:longest
 set spelllang=en,cjk
 set hlsearch
+set hidden
+set switchbuf=useopen
 nmap <Esc><Esc> :nohlsearch<CR><Esc>
 if has('persistent_undo')
     set undodir=~/.vim/undo
@@ -70,3 +72,5 @@ nnoremap == gg=G''
 inoremap , ,<SPACE>
 
 set clipboard=unnamed
+
+filetype plugin indent on
